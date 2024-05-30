@@ -6,42 +6,22 @@ import { useCallback } from 'react'
 import { colors } from '@styles/colorPalette'
 import Flex from '@shared/Flex'
 import Button from '@shared/Button'
-import useUser from '@hooks/auth/useUser'
-import Spacing from '@shared/Spacing'
 
 function Navbar() {
   const location = useLocation()
   const showSignButton =
     ['/signup', '/signin'].includes(location.pathname) === false
 
-  const user = useUser()
+  // @TODO
+  const user = null
 
   const renderButton = useCallback(() => {
     if (user != null) {
       return (
-        <Flex align="center">
-          <Link to="/my">
-            <img
-              src={
-                user.photoURL ??
-                'https://cdn1.iconfinder.com/data/icons/user-pictures/101/malecostume-512.png'
-              }
-              alt="유저의 이미지"
-              width={40}
-              height={40}
-              style={{ borderRadius: '100%' }}
-            />
-          </Link>
-          <Spacing size={4} direction="horizontal" />
-          <Link to="/settings">
-            <img
-              src="https://cdn1.iconfinder.com/data/icons/ionicons-outline-vol-2/512/settings-outline-64.png"
-              width={40}
-              height={40}
-              alt=""
-            />
-          </Link>
-        </Flex>
+        <Link to="/my">
+          {/* @TODO */}
+          <img src="" alt="" />
+        </Link>
       )
     }
 
@@ -58,7 +38,7 @@ function Navbar() {
 
   return (
     <Flex justify="space-between" align="center" css={navbarContainerStyles}>
-      <Link to="/">Love Trip</Link>
+      <Link to="/">홈</Link>
       {renderButton()}
     </Flex>
   )
