@@ -1,46 +1,59 @@
-# Getting Started with Create React App
+### 🧳 LoveTrip
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+>React 기반으로 제작한 호텔 예약 프로젝트입니다.\
+>소셜 로그인, 호텔 상세 정보, 예약, 리뷰, 찜 기능까지 포함된 종합 여행 서비스 UI 클론 프로젝트입니다.  
+>실시간 데이터 렌더링과 퍼포먼스 최적화, SEO, GitHub Actions를 통한 CI/CD까지 전반적인 프론트엔드 기술을 체험하며 구현하였습니다.
 
-## Available Scripts
+</br>
 
-In the project directory, you can run:
+### 기술 스택
 
-### `yarn start`
+- **Frontend**: React, JavaScript, JSX, CSS Modules
+- **Backend (Mock)**: JSON Server
+- **지도**: Kakao Map API
+- **인증**: 소셜 로그인 (카카오/구글 등)
+- **최적화**: 코드 스플리팅, 리소스 캐싱, lazy loading, SEO 적용
+- **CI/CD**: GitHub Actions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+</br>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### 주요 기능
 
-### `yarn test`
+- 호텔 목록 및 상세 페이지
+- 실시간 잔여 객실 수 표시
+- 추천 상품 및 이벤트 핫딜 표시
+- 찜하기/찜목록 기능
+- 소셜 로그인 및 사용자 인증
+- 리뷰 등록 및 조회
+- 예약 기능 (캘린더, 예약폼, 완료 처리)
+- 성능 최적화 및 SEO 대응
+- CI/CD 자동 배포 환경 구축
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+</br>
 
-### `yarn build`
+### 실행 방법
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+# 1. 레포지토리 클론
+git clone https://github.com/Yang-Sooyoung/love_trip.git
+cd love_trip
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# 2. 의존성 설치
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# 3. JSON Server 실행 (백그라운드 터미널)
+npx json-server --watch db.json --port 5000
 
-### `yarn eject`
+# 4. React 앱 실행
+npm start
+````
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+</br>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### 🙋‍♀️ 만든 사람
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- 👩‍💻 이름: 양수영 (Yang Sooyoung)
+- 🔗 GitHub: [@Yang-Sooyoung](https://github.com/Yang-Sooyoung)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<br/>
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
